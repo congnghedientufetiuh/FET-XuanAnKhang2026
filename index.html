@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FET - Xuân An Khang 2026 — Món quà dành riêng cho chiến sĩ 🧧</title>
+  <link rel="icon" href="assets\images\giao-dien\favicon1.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+</head>
+
+<body>
+
+  <button id="musicToggle" class="music-toggle muted" title="Bật / tắt nhạc">🔇</button>
+
+  <audio id="bgm" src="assets/music/theme.mp3" preload="auto" loop></audio>
+
+
+  <section id="gate" class="screen active">
+    <div class="bg gate-bg"></div>
+    <canvas id="fireworksCanvas" class="fx-canvas"></canvas>
+    <div id="petalsGate" class="petals"></div>
+
+    <div class="vignette"></div>
+
+    <div class="center hero">
+
+      <div class="hero-actions">
+        <button id="btnStart" class="btn primary">BẮT ĐẦU HÀNH TRÌNH</button>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="auth" class="screen overlay-screen">
+    <div class="bg gate-bg blur"></div>
+    <div class="darken light"></div>
+
+    <canvas id="fireworksCanvasAuth" class="fx-canvas"></canvas>
+    <div id="petalsAuth" class="petals"></div>
+
+    <div class="center">
+      <div class="card glass">
+        <div class="card-head">
+          <div class="badge small">✨ Mở cổng Xuân ✨</div>
+          <h2>Xác nhận chiến sĩ</h2>
+          <p class="muted">Nhập đúng <b>Họ và tên</b> + <b>MSSV/MSNS</b> để mở “quà” nhé.</p>
+        </div>
+
+        <div class="form">
+          <label>
+            <span>Họ và tên</span>
+            <input id="inputName" type="text" placeholder="VD: Lê Hồ Vũ Kiệt Long Dương" autocomplete="off" />
+          </label>
+
+          <label>
+            <span>MSSV / MSNS</span>
+            <input id="inputId" type="text" placeholder="VD: 22334455" autocomplete="off" />
+          </label>
+
+          <button id="btnCheck" class="btn primary">Mở cổng Xuân ✨</button>
+          <p id="authMsg" class="msg"></p>
+
+          <button id="btnBackToGate" class="btn ghost">← Quay lại Cổng Xuân</button>
+        </div>
+        <div class="card-end">
+          <p class="muted">🥺Bạn không mở được quà? Zalo mình liền nhé: 094610568💌</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="scene" class="screen">
+    <div class="bg scene-bg"></div>
+    <canvas id="fireworksCanvasScene" class="fx-canvas"></canvas>
+    <canvas id="threeCanvas"></canvas>
+
+    <div id="petalsScene" class="petals subtle"></div>
+
+    <div class="topbar">
+      <div class="topbar-left">
+        <div class="badge small">🖼️ Không gian chiến sĩ 🖼️</div>
+        <div class="topbar-sub">--• Chạm để xem kỷ niệm •--</div>
+      </div>
+      <div class="topbar-right">
+        <button id="btnToThanks" class="btn primary small">Đi tới lời tri ân →</button>
+      </div>
+    </div>
+
+    <div id="overlay" class="overlay hidden">
+      <div class="overlay-card glass">
+        <button id="btnCloseOverlay" class="overlay-close" title="Đóng">×</button>
+
+        <div class="overlay-header">
+          <img id="ovAvatar" class="ov-avatar" alt="avatar" />
+          <div>
+            <div id="ovName" class="ov-name">—</div>
+            <div id="ovId" class="ov-id">—</div>
+          </div>
+        </div>
+
+        <div class="overlay-body">
+          <div class="ov-block">
+            <div class="ov-label">🎯 Mục tiêu 2026 🎯</div>
+            <div id="ovGoal" class="ov-text">—</div>
+          </div>
+
+          <div class="ov-block">
+            <div class="ov-label">💌 Lời nhắn gửi 2030 💌</div>
+            <div id="ovMsg2030" class="ov-text big">—</div>
+          </div>
+
+          <div class="ov-block">
+            <div class="ov-label">📸 Cùng xem lại các khoảnh khắc của bạn trong chương trình nhé 📸</div>
+            <div id="ovGallery" class="ov-gallery"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="thanks" class="screen">
+    <div class="bg thanks-bg"></div>
+    <div class="darken light"></div>
+    <div id="thanksArrow" class="thanks-arrow">▼</div>
+    <div class="thanks-box card glass wide">
+      <div class="badge">💖 Lời tri ân 💖</div>
+      <h2>Cảm ơn bạn, chiến sĩ!</h2>
+
+      <p class="muted">
+      </p>
+      <div class="quote">
+      </div>
+      <div class="row">
+        <button id="btnReplay" class="btn primary">Xem lại hành trình ↺</button>
+        <button id="btnBackToScene" class="btn ghost">← Quay lại Không gian</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/page4Controller.js"></script>
+  <script src="js/threeScene.js"></script>
+  <script src="js/soldierCards.js"></script>
+  <script src="js/musicText.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
