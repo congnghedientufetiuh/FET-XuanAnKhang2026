@@ -6,6 +6,11 @@
   --line: rgba(255, 255, 255, 0.22);
   --muted: rgba(255, 255, 255, 0.78);
   --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  /* ===== UI LAYOUT CONTROL ===== */
+  --ui-center-offset-y: 0px;
+  --ui-btn-start-y: 42vh;
+  --ui-thanks-top: 36vh;
+  --ui-arrow-bottom: 56px;
 }
 
 /* ===== 2. RESET & CẤU TRÌNH CHUNG ===== */
@@ -206,7 +211,7 @@ body {
   font-size: 22px;          /* Kích thước chữ */
   font-weight: bold;      /* QUAN TRỌNG: đừng để 900 */
   padding: 16px 44px;       /* Kích thước nút */
-  margin-top: 43vh;         /* Đẩy nút xuống dưới trung tâm */
+  margin-top: var(--ui-btn-start-y);         /* Đẩy nút xuống dưới trung tâm */
   border-radius: 999px;
   letter-spacing: 0.6px;
 
@@ -638,9 +643,9 @@ body.fade-out::after {
 #btnToThanks {
   font-family: 'faustina';
   font-size: 16px;    
-  position: absolute;
-  top: 93vh;
-  right: 30px;
+  position: fixed;
+  bottom: 28px;   /* ............ */
+  right: 28px;    /* ............ */
 }
 
 
@@ -701,24 +706,6 @@ body.fade-out::after {
   letter-spacing: 0.3px;
 }
 
-/* MŨI TÊN */
-.thanks-arrow {
-  position: absolute;
-  bottom: 46px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 26px;
-  opacity: 0;
-  animation: arrowFloat 1.6s ease-in-out infinite;
-  transition: opacity 0.6s ease;
-  cursor: pointer;
-  z-index: 20;
-}
-
-.thanks-arrow.show {
-  opacity: 0.9;
-}
-
 @keyframes arrowFloat {
   0%   { transform: translate(-50%, 0); }
   50%  { transform: translate(-50%, -10px); }
@@ -727,17 +714,19 @@ body.fade-out::after {
 
 /* ===== THANKS ARROW ===== */
 .thanks-arrow {
-  position: absolute;
-  bottom: 48px;
+  position: fixed;
+  bottom: var(--ui-arrow-bottom);
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 32px;
-  opacity: 0;
-  cursor: pointer;
   animation: arrowFloat 1.6s ease-in-out infinite;
-  transition: opacity 0.6s ease;
+  z-index: 20;
+  pointer-events: auto;
+  opacity: 0;
 }
 
 .thanks-arrow.show {
-  opacity: 0.9;
+  opacity: 1;
 }
 
 
@@ -763,21 +752,12 @@ body.fade-out::after {
   }
 }
 
-/* ===== BUTTON AFTER VIDEO ===== */
-#thanks .row {
-  margin-top: 24px;
-}
-
-#thanks .row .btn {
-  font-size: 14px;
-  padding: 10px 18px;
-  opacity: 0.9;
-}
+/* ===== Box AFTER VIDEO ===== */
 
 .thanks-box {
   position: absolute;
 
-  top: 350px;              /* ⭐ mép trên cố định */
+  top: var(--ui-thanks-top);              /* ⭐ mép trên cố định */
   left: 50%;
   transform: translateX(-50%);
 
