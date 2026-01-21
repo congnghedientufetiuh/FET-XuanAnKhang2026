@@ -761,7 +761,7 @@ body.fade-out::after {
   left: 50%;
   transform: translateX(-50%);
 
-  width: 900px;
+  width: 1000px;
   max-width: 92vw;
 
   padding: 36px 42px;
@@ -770,3 +770,4 @@ body.fade-out::after {
   transform-origin: top center; /* ⭐ khóa hướng nở */
   z-index: 10;
 }
+
