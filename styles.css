@@ -629,8 +629,9 @@ body.fade-out::after {
 }
 
 .img-zoom img {
-  max-width: 94vw;
-  max-height: 94vh;
+  transform: scale(3);
+  max-width: 1000vw;
+  max-height: 1000vh;
   border-radius: 14px;
 }
 
@@ -770,6 +771,7 @@ body.fade-out::after {
   transform-origin: top center; /* ⭐ khóa hướng nở */
   z-index: 10;
 }
+
 
 
 
