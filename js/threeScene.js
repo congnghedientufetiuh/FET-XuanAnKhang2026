@@ -4,7 +4,7 @@
 let scene3D = null;
 let threeAudio = null;
 let galleryGroup = null;
-let galleryRotationSpeed = 0.012;
+let galleryRotationSpeed = 0.006;
 
 function initThreeScene(canvas) {
   // ===== 1. KHỞI TẠO SCENE =====
@@ -180,5 +180,6 @@ function stopThreeAudio() {
 }
 
 window.stopThreeAudio = stopThreeAudio;
+
 
 
