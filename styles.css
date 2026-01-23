@@ -65,7 +65,7 @@ body {
 .gate-bg { background-image: url("assets/images/giao-dien/gate-bg.jpg"); }
 .auth-bg { background-image: url("assets/images/giao-dien/gate-bg.jpg"); }
 .scene-bg { background-image: url("assets/images/giao-dien/scene-bg.jpg"); }
-.thanks-bg { background-image: url("assets/images/giao-dien/thanks-bg.png"); }
+.thanks-bg { background-image: url("assets/images/giao-dien/thanks-bg1.png"); }
 
 .blur {
   filter: blur(4px) saturate(1.1) contrast(1.05);
@@ -770,4 +770,5 @@ body.fade-out::after {
   transform-origin: top center; /* ⭐ khóa hướng nở */
   z-index: 10;
 }
+
 
