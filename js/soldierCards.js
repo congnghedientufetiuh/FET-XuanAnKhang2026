@@ -89,7 +89,8 @@ function animateSoldierCard() {
   soldierMesh.position.y = 0.4 + Math.sin(soldierFloatTime) * 0.18;
 
   // 🔄 Hiệu ứng xoay cực chậm để tăng tính sinh động
-  soldierMesh.rotation.y += 0.0016;
+  soldierMesh.rotation.y += 0.003;
 
 }
+
 
