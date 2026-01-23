@@ -83,11 +83,12 @@ function animateSoldierCard() {
   if (!soldierMesh) return;
 
   // Tăng biến thời gian để tạo nhịp điệu
-  soldierFloatTime += 0.003;
+  soldierFloatTime += 0.013;
 
   // 🌊 Hiệu ứng bay bổng (Floating) bằng hàm Sin
   soldierMesh.position.y = 0.4 + Math.sin(soldierFloatTime) * 0.18;
 
   // 🔄 Hiệu ứng xoay cực chậm để tăng tính sinh động
   soldierMesh.rotation.y += 0.0006;
+
 }
