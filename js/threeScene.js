@@ -70,7 +70,7 @@ function initThreeScene(canvas) {
   // ===== 7. ÂM THANH (SCENE RIÊNG – KHÔNG CHỒNG LẤP) =====
   threeAudio = new Audio("assets/music/main.mp3");
   threeAudio.loop = true;
-  threeAudio.volume = 0.75;
+  threeAudio.volume = 1;
   threeAudio.pause();
   threeAudio.currentTime = 0;
   window.threeAudio = threeAudio;
@@ -180,6 +180,7 @@ function stopThreeAudio() {
 }
 
 window.stopThreeAudio = stopThreeAudio;
+
 
 
 
