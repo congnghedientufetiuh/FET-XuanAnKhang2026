@@ -9,7 +9,7 @@
   /* ===== UI LAYOUT CONTROL ===== */
   --ui-center-offset-y: 0px;
   --ui-btn-start-y: 42vh;
-  --ui-thanks-top: 36vh;
+  --ui-thanks-top: 20vh;
   --ui-arrow-bottom: 56px;
 }
 
@@ -770,5 +770,6 @@ body.fade-out::after {
   transform-origin: top center; /* ⭐ khóa hướng nở */
   z-index: 10;
 }
+
 
 
