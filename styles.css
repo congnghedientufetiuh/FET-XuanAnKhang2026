@@ -819,6 +819,37 @@ body.fade-out::after {
 .hidden {
   display: none;
 }
+.device-notice {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.device-notice.hidden {
+  display: none;
+}
+
+.device-card {
+  background: rgba(20,20,30,0.9);
+  padding: 24px 28px;
+  border-radius: 16px;
+  max-width: 360px;
+  text-align: center;
+  color: #fff;
+}
+
+.device-card button {
+  margin-top: 16px;
+  padding: 8px 20px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+}
+
 
 
 
