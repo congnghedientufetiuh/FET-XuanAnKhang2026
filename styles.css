@@ -772,6 +772,56 @@ body.fade-out::after {
   z-index: 10;
 }
 
+/* ===== DEVICE WARNING (MOBILE) ===== */
+.device-warning {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 20, 0.92);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.device-card {
+  max-width: 420px;
+  padding: 28px;
+  text-align: center;
+}
+
+.device-card h2 {
+  margin-bottom: 12px;
+}
+
+.device-card p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ===== FULLSCREEN HINT (DESKTOP) ===== */
+.fullscreen-hint {
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  background: rgba(0,0,0,0.6);
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  z-index: 50;
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hidden {
+  display: none;
+}
+
+
+
 
 
 
