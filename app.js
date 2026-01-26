@@ -549,9 +549,9 @@ function zoomImage(src) {
   const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   if (isMobile) {
-    /*text.innerText =
+    text.innerText =
       "📱 Trải nghiệm này được thiết kế tốt nhất trên máy tính.\nVui lòng mở bằng PC hoặc Laptop để cảm nhận trọn vẹn 💛";
-    notice.classList.remove("hidden");*/
+    notice.classList.remove("hidden");
   } else {
     text.innerText =
       "💻 Để có trải nghiệm tốt nhất, bạn hãy nhấn F11 để mở toàn màn hình nhé ✨";
@@ -562,6 +562,7 @@ function zoomImage(src) {
     notice.classList.add("hidden");
   });
 })();
+
 
 
 
