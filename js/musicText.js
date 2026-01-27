@@ -6,7 +6,6 @@ let lastSpawn = 0;
 
 
 const WISHES = [
-  // Xuân – Bình an
   "Xuân an khang vạn sự như ý",
   "Xuân đến lòng người ấm lại",
   "Xuân về mang theo hy vọng",
@@ -253,5 +252,6 @@ function createFinalText(text) {
   textSprites.push(sprite);
 
 }
+
 
 
