@@ -1,18 +1,28 @@
-
+// js/musicText.js
+// Xử lý hiệu ứng chữ bay theo nhịp nhạc (Music Reactive Text)
 
 let audioCtx, analyser, dataArray;
 let textSprites = [];
 let lastSpawn = 0;
 
-
+// Danh sách các câu chúc ngẫu nhiên
 const WISHES = [
-  "Cố lên nhé",
-  "Mỉm cười nhé",
-  "Thương mình hơn",
-  "Giữ lửa nhé",
-  "Vững vàng nhé",
-  "Tin nhé",
-  "Đi nhé"
+  "Xuân an khang – Vạn sự như ý",
+  "Cảm ơn vì đã không bỏ cuộc",
+  "Một năm mới – Một hành trình mới",
+  "Chúc bạn luôn vững vàng",
+  "Ký ức hôm nay – Hành trang mai sau",
+  "Thanh xuân này thật đẹp",
+  "Mong bạn luôn được bình an",
+  "Xuân đến – lòng người ấm lại",
+  "Cảm ơn vì đã là một chiến sĩ"
+];
+
+// Bảng màu rực rỡ sắc xuân
+const COLORS = [
+  "#FFD966", // Vàng ấm (Mai)
+  "#FFB3C6", // Hồng nhạt (Đào)
+  "#FFF1C1"  // Trắng ngà
 ];
 
 /**
@@ -202,9 +212,4 @@ function createFinalText(text) {
   sprite.userData = { life: 0, final: true };
   window.scene3D.scene.add(sprite);
   textSprites.push(sprite);
-
 }
-
-
-
-
