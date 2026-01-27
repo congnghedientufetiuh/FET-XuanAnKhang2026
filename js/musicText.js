@@ -6,54 +6,6 @@ let lastSpawn = 0;
 
 
 const WISHES = [
-  "Xuân an khang vạn sự như ý",
-  "Xuân đến lòng người ấm lại",
-  "Xuân về mang theo hy vọng",
-  "Xuân mới nhiều niềm vui",
-  "Mong xuân này thật dịu dàng",
-  "Xuân sang gió cũng hiền hơn",
-  "Xuân này lòng nhẹ tênh",
-  "Mong bạn luôn được bình an",
-  "Bình an là điều quý giá",
-  "Bình an giữa đời nhiều sóng",
-  "Chỉ mong hai chữ bình an",
-  "Bình yên trong từng khoảnh khắc",
-  "Hạnh phúc bắt đầu từ bình an",
-  "Thanh xuân này thật đẹp",
-  "Thanh xuân là để nhớ",
-  "Thanh xuân không hối tiếc",
-  "Thanh xuân đầy kỷ niệm",
-  "Một thời tuổi trẻ rực rỡ",
-  "Thanh xuân đi qua rất nhanh",
-  "Tuổi trẻ là những ngày xanh",
-  "Một năm mới một hành trình",
-  "Một chặng đường mới bắt đầu",
-  "Mỗi ngày là một bước",
-  "Đi tiếp dù chậm",
-  "Cứ đi rồi sẽ tới",
-  "Hành trình nào cũng đáng nhớ",
-  "Tương lai bắt đầu từ hôm nay",
-  "Cảm ơn vì đã không bỏ cuộc",
-  "Bạn đã làm rất tốt",
-  "Bạn mạnh mẽ hơn bạn nghĩ",
-  "Đừng quên tin chính mình",
-  "Mọi nỗ lực đều có ý nghĩa",
-  "Không sao nếu mệt",
-  "Mệt thì nghỉ chút",
-  "Mọi điều rồi sẽ ổn",
-  "Ngày mai sẽ khác",
-  "Hy vọng luôn ở phía trước",
-  "Tin vào những điều tốt đẹp",
-  "Luôn có ánh sáng phía trước",
-  "Sau mưa trời sẽ sáng",
-  "Cảm ơn vì đã là chiến sĩ",
-  "Tự hào vì có bạn",
-  "Thanh xuân đẹp khi cống hiến",
-  "Một chiến sĩ một trái tim",
-  "Cống hiến bằng cả nhiệt huyết",
-  "Sống là để sẻ chia",
-  "Cho đi là còn mãi",
-  "Bình an nhé",
   "Cố lên nhé",
   "Mỉm cười nhé",
   "Thương mình hơn",
@@ -252,6 +204,7 @@ function createFinalText(text) {
   textSprites.push(sprite);
 
 }
+
 
 
 
