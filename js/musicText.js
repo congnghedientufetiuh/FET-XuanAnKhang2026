@@ -1,11 +1,10 @@
-// js/musicText.js
-// Xử lý hiệu ứng chữ bay theo nhịp nhạc (Music Reactive Text)
+
 
 let audioCtx, analyser, dataArray;
 let textSprites = [];
 let lastSpawn = 0;
 
-// Danh sách các câu chúc ngẫu nhiên
+
 const WISHES = [
   // Xuân – Bình an
   "Xuân an khang vạn sự như ý",
@@ -15,16 +14,12 @@ const WISHES = [
   "Mong xuân này thật dịu dàng",
   "Xuân sang gió cũng hiền hơn",
   "Xuân này lòng nhẹ tênh",
-
-  // Bình an – Hạnh phúc
   "Mong bạn luôn được bình an",
   "Bình an là điều quý giá",
   "Bình an giữa đời nhiều sóng",
   "Chỉ mong hai chữ bình an",
   "Bình yên trong từng khoảnh khắc",
   "Hạnh phúc bắt đầu từ bình an",
-
-  // Thanh xuân – Ký ức
   "Thanh xuân này thật đẹp",
   "Thanh xuân là để nhớ",
   "Thanh xuân không hối tiếc",
@@ -32,8 +27,6 @@ const WISHES = [
   "Một thời tuổi trẻ rực rỡ",
   "Thanh xuân đi qua rất nhanh",
   "Tuổi trẻ là những ngày xanh",
-
-  // Hành trình – Tương lai
   "Một năm mới một hành trình",
   "Một chặng đường mới bắt đầu",
   "Mỗi ngày là một bước",
@@ -41,8 +34,6 @@ const WISHES = [
   "Cứ đi rồi sẽ tới",
   "Hành trình nào cũng đáng nhớ",
   "Tương lai bắt đầu từ hôm nay",
-
-  // Động viên – Nội lực
   "Cảm ơn vì đã không bỏ cuộc",
   "Bạn đã làm rất tốt",
   "Bạn mạnh mẽ hơn bạn nghĩ",
@@ -50,16 +41,12 @@ const WISHES = [
   "Mọi nỗ lực đều có ý nghĩa",
   "Không sao nếu mệt",
   "Mệt thì nghỉ chút",
-
-  // Niềm tin – Hy vọng
   "Mọi điều rồi sẽ ổn",
   "Ngày mai sẽ khác",
   "Hy vọng luôn ở phía trước",
   "Tin vào những điều tốt đẹp",
   "Luôn có ánh sáng phía trước",
   "Sau mưa trời sẽ sáng",
-
-  // Chiến sĩ – Cống hiến
   "Cảm ơn vì đã là chiến sĩ",
   "Tự hào vì có bạn",
   "Thanh xuân đẹp khi cống hiến",
@@ -67,8 +54,6 @@ const WISHES = [
   "Cống hiến bằng cả nhiệt huyết",
   "Sống là để sẻ chia",
   "Cho đi là còn mãi",
-
-  // Ngắn – rất hợp animation
   "Bình an nhé",
   "Cố lên nhé",
   "Mỉm cười nhé",
@@ -268,4 +253,5 @@ function createFinalText(text) {
   textSprites.push(sprite);
 
 }
+
 
