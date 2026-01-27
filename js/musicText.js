@@ -7,15 +7,30 @@ let lastSpawn = 0;
 
 // Danh sách các câu chúc ngẫu nhiên
 const WISHES = [
-  "Xuân an khang – Vạn sự như ý",
-  "Cảm ơn vì đã không bỏ cuộc",
-  "Một năm mới – Một hành trình mới",
-  "Chúc bạn luôn vững vàng",
-  "Ký ức hôm nay – Hành trang mai sau",
-  "Thanh xuân này thật đẹp",
+  "Xuân an khang vạn sự như ý",
+  "Xuân đến lòng người ấm lại",
   "Mong bạn luôn được bình an",
-  "Xuân đến – lòng người ấm lại",
-  "Cảm ơn vì đã là một chiến sĩ"
+  "Một năm mới một hành trình",
+  "Thanh xuân này thật đẹp",
+  "Ký ức hôm nay hành trang mai",
+  "Cảm ơn vì đã không bỏ cuộc",
+  "Bạn đã làm rất tốt",
+  "Chúc bạn luôn vững vàng",
+  "Cứ đi rồi sẽ tới",
+  "Mọi nỗ lực đều có ý nghĩa",
+  "Thanh xuân là để nhớ",
+  "Giữ lửa trong tim",
+  "Bình an nhé",
+  "Cố lên nhé",
+  "Mọi điều rồi sẽ ổn",
+  "Tin vào bản thân",
+  "Xuân này thương mình hơn",
+  "Cảm ơn vì đã là chiến sĩ",
+  "Thanh xuân đẹp khi cống hiến",
+  "Một chiến sĩ một trái tim",
+  "Mỗi đóng góp đều ý nghĩa",
+  "Xuân mới nhiều hy vọng",
+  "Hạnh phúc từ điều giản dị"
 ];
 
 // Bảng màu rực rỡ sắc xuân
@@ -212,4 +227,5 @@ function createFinalText(text) {
   sprite.userData = { life: 0, final: true };
   window.scene3D.scene.add(sprite);
   textSprites.push(sprite);
+
 }
