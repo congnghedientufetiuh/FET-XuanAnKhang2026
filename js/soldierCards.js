@@ -25,10 +25,10 @@ function createSoldierCard(scene, soldier, onClick) {
   const material = new THREE.MeshStandardMaterial({
     map: texture,
     transparent: true,
-    emissive: new THREE.Color(0xffd37a),
-    emissiveIntensity: 0.25,
-    roughness: 0.6,
-    metalness: 0.1,
+    // emissive: new THREE.Color(0xffd37a),
+    // emissiveIntensity: 0.25,
+    // roughness: 0.6,
+    // metalness: 0.1,
     side: THREE.DoubleSide // Cho phép nhìn thấy cả mặt sau nếu xoay
   });
 
@@ -92,5 +92,6 @@ function animateSoldierCard() {
   soldierMesh.rotation.y += 0.003;
 
 }
+
 
 
