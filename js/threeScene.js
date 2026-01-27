@@ -46,26 +46,26 @@ function initThreeScene(canvas) {
   room.position.y = 0.2;  // hạ xuống
 
   // ===== 6. HIỆU ỨNG NGÔI SAO (STARS) =====
-  const stars = new THREE.BufferGeometry();
-  const starCount = 800;
-  const pos = new Float32Array(starCount * 3);
+  // const stars = new THREE.BufferGeometry();
+  // const starCount = 800;
+  // const pos = new Float32Array(starCount * 3);
   
-  for (let i = 0; i < starCount; i++) {
-    pos[i * 3] = (Math.random() - 0.5) * 40;
-    pos[i * 3 + 1] = (Math.random() - 0.5) * 20;
-    pos[i * 3 + 2] = (Math.random() - 0.5) * 40;
-  }
+  // for (let i = 0; i < starCount; i++) {
+  //   pos[i * 3] = (Math.random() - 0.5) * 40;
+  //   pos[i * 3 + 1] = (Math.random() - 0.5) * 20;
+  //   pos[i * 3 + 2] = (Math.random() - 0.5) * 40;
+  // }
   
-  stars.setAttribute("position", new THREE.BufferAttribute(pos, 3));
-  scene.add(new THREE.Points(
-    stars,
-    new THREE.PointsMaterial({ 
-      color: 0xffffff, 
-      size: 0.06, 
-      opacity: 0.6, 
-      transparent: true 
-    })
-  ));
+  // stars.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+  // scene.add(new THREE.Points(
+  //   stars,
+  //   new THREE.PointsMaterial({ 
+  //     color: 0xffffff, 
+  //     size: 0.06, 
+  //     opacity: 0.6, 
+  //     transparent: true 
+  //   })
+  // ));
 
   // ===== 7. ÂM THANH (SCENE RIÊNG – KHÔNG CHỒNG LẤP) =====
   threeAudio = new Audio("assets/music/main.mp3");
@@ -180,6 +180,7 @@ function stopThreeAudio() {
 }
 
 window.stopThreeAudio = stopThreeAudio;
+
 
 
 
