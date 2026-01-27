@@ -7,15 +7,75 @@ let lastSpawn = 0;
 
 // Danh sách các câu chúc ngẫu nhiên
 const WISHES = [
-  "Xuân an khang – Vạn sự như ý",
-  "Cảm ơn vì đã không bỏ cuộc",
-  "Một năm mới – Một hành trình mới",
-  "Chúc bạn luôn vững vàng",
-  "Ký ức hôm nay – Hành trang mai sau",
-  "Thanh xuân này thật đẹp",
+  "Xuân an khang vạn sự như ý",
+  "Xuân đến lòng người ấm lại",
+  "Xuân về mang theo hy vọng",
+  "Xuân mới nhiều niềm vui",
+  "Mong xuân này thật dịu dàng",
+  "Xuân sang gió cũng hiền hơn",
+  "Xuân này lòng nhẹ tênh",
+
+  // Bình an – Hạnh phúc
   "Mong bạn luôn được bình an",
-  "Xuân đến – lòng người ấm lại",
-  "Cảm ơn vì đã là một chiến sĩ"
+  "Bình an là điều quý giá",
+  "Bình an giữa đời nhiều sóng",
+  "Chỉ mong hai chữ bình an",
+  "Bình yên trong từng khoảnh khắc",
+  "Hạnh phúc bắt đầu từ bình an",
+
+  // Thanh xuân – Ký ức
+  "Thanh xuân này thật đẹp",
+  "Thanh xuân là để nhớ",
+  "Thanh xuân không hối tiếc",
+  "Thanh xuân đầy kỷ niệm",
+  "Một thời tuổi trẻ rực rỡ",
+  "Thanh xuân đi qua rất nhanh",
+  "Tuổi trẻ là những ngày xanh",
+
+  // Hành trình – Tương lai
+  "Một năm mới một hành trình",
+  "Một chặng đường mới bắt đầu",
+  "Mỗi ngày là một bước",
+  "Đi tiếp dù chậm",
+  "Cứ đi rồi sẽ tới",
+  "Hành trình nào cũng đáng nhớ",
+  "Tương lai bắt đầu từ hôm nay",
+
+  // Động viên – Nội lực
+  "Cảm ơn vì đã không bỏ cuộc",
+  "Bạn đã làm rất tốt",
+  "Bạn mạnh mẽ hơn bạn nghĩ",
+  "Đừng quên tin chính mình",
+  "Mọi nỗ lực đều có ý nghĩa",
+  "Không sao nếu mệt",
+  "Mệt thì nghỉ chút",
+
+  // Niềm tin – Hy vọng
+  "Mọi điều rồi sẽ ổn",
+  "Ngày mai sẽ khác",
+  "Hy vọng luôn ở phía trước",
+  "Tin vào những điều tốt đẹp",
+  "Luôn có ánh sáng phía trước",
+  "Sau mưa trời sẽ sáng",
+
+  // Chiến sĩ – Cống hiến
+  "Cảm ơn vì đã là chiến sĩ",
+  "Tự hào vì có bạn",
+  "Thanh xuân đẹp khi cống hiến",
+  "Một chiến sĩ một trái tim",
+  "Cống hiến bằng cả nhiệt huyết",
+  "Sống là để sẻ chia",
+  "Cho đi là còn mãi",
+
+  // Ngắn – rất hợp animation
+  "Bình an nhé",
+  "Cố lên nhé",
+  "Mỉm cười nhé",
+  "Thương mình hơn",
+  "Giữ lửa nhé",
+  "Vững vàng nhé",
+  "Tin nhé",
+  "Đi nhé"
 ];
 
 // Bảng màu rực rỡ sắc xuân
@@ -213,3 +273,4 @@ function createFinalText(text) {
   window.scene3D.scene.add(sprite);
   textSprites.push(sprite);
 }
+
