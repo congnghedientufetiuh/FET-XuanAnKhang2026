@@ -72,7 +72,7 @@ function playThanksVideo() {
     }
 
   const video = document.createElement("video");
-  video.src = "assets/images/giao-dien/video.mp4";
+  video.src = "assets/images/giao-dien/qua.mp4";
   video.autoplay = true;
   video.controls = false;
   video.playsInline = true;
@@ -107,3 +107,4 @@ arrow.addEventListener("click", playThanksVideo);
    EXPORT (để app.js gọi)
 ================================ */
 window.initThanksPage = initThanksPage;
+
