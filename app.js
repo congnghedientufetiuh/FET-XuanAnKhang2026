@@ -554,7 +554,7 @@ function zoomImage(src) {
     notice.classList.remove("hidden");
   } else {
     text.innerText =
-      "💻 Để có trải nghiệm tốt nhất, bạn hãy nhấn F11 để mở toàn màn hình nhé ✨";
+      "💻 Để có trải nghiệm tốt nhất, bạn hãy nhấn F11 để mở toàn màn hình và bật âm thanh lên nhé ✨";
     notice.classList.remove("hidden");
   }
 
@@ -562,6 +562,7 @@ function zoomImage(src) {
     notice.classList.add("hidden");
   });
 })();
+
 
 
 
