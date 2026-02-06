@@ -87,7 +87,7 @@ function initThreeScene(canvas) {
 
   // ===== 9. VÒNG LẶP HOẠT ẢNH (ANIMATE) =====
   let last = performance.now();
-  
+  function animate() {
     const now = performance.now();
     const delta = (now - last) / 1000;
     last = now;
@@ -183,6 +183,7 @@ function stopThreeAudio() {
 }
 
 window.stopThreeAudio = stopThreeAudio;
+
 
 
 
