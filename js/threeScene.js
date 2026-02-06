@@ -139,7 +139,11 @@ function createGalleryCarousel(scene, images = []) {
   const planeH = 1.4;
 
   const loader = new THREE.TextureLoader();
-  const angleStep = (Math.PI * 2) / Math.max(images.length, 1);
+  loader.setCrossOrigin("anonymous");
+  
+  const spacingFactor = 2; // ⭐ tăng = xa hơn
+  const count = Math.max(images.length, 1);
+  const angleStep = ((Math.PI * 2) / count) * spacingFactor;
 
   images.forEach((src, i) => {
     const tex = loader.load(src);
@@ -180,6 +184,7 @@ function stopThreeAudio() {
 }
 
 window.stopThreeAudio = stopThreeAudio;
+
 
 
 
