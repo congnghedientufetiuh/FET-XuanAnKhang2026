@@ -64,6 +64,11 @@ async function initThanksPage(soldierData) {
    VIDEO OVERLAY
 ================================ */
 function playThanksVideo() {
+   if (window.scene3D) {
+     threeRunning = false;
+     window.scene3D.renderer.setAnimationLoop(null);
+   }
+
   if (arrowClicked) return;
   arrowClicked = true;
   arrow.classList.remove("show");
@@ -107,4 +112,5 @@ arrow.addEventListener("click", playThanksVideo);
    EXPORT (để app.js gọi)
 ================================ */
 window.initThanksPage = initThanksPage;
+
 
