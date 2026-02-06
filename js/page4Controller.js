@@ -64,7 +64,6 @@ async function initThanksPage(soldierData) {
    VIDEO OVERLAY
 ================================ */
 function playThanksVideo() {
-   video.preload = "auto";
 
   if (arrowClicked) return;
   arrowClicked = true;
@@ -109,6 +108,7 @@ arrow.addEventListener("click", playThanksVideo);
    EXPORT (để app.js gọi)
 ================================ */
 window.initThanksPage = initThanksPage;
+
 
 
 
