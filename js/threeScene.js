@@ -5,6 +5,7 @@ let scene3D = null;
 let threeAudio = null;
 let galleryGroup = null;
 let galleryRotationSpeed = 0.002;
+let threeRunning = true;
 
 function initThreeScene(canvas) {
   // ===== 1. KHỞI TẠO SCENE =====
@@ -89,6 +90,7 @@ function initThreeScene(canvas) {
   let last = performance.now();
   
   function animate() {
+    if (!threeRunning) return;
     const now = performance.now();
     const delta = (now - last) / 1000;
     last = now;
@@ -184,6 +186,7 @@ function stopThreeAudio() {
 }
 
 window.stopThreeAudio = stopThreeAudio;
+
 
 
 
