@@ -554,7 +554,7 @@ input:focus { border-color: rgba(255, 255, 255, 0.35); }
 .ov-gallery { display: flex; gap: 10px; flex-wrap: wrap; }
 
 .ov-gallery img {
-  width: 160px; height: 110px;
+  width: 140px; height: 100px;
   border-radius: 14px;
   object-fit: cover;
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -855,6 +855,7 @@ body.fade-out::after {
   border: none;
   cursor: pointer;
 }
+
 
 
 
